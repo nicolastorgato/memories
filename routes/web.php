@@ -17,6 +17,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/memories', function () {
-    return view('memories');
-});
+Route::get('/memories', 'MemoriesController@index')->middleware('auth');
+
+Route::post('/memories', 'MemoriesController@store');
+
+Route::delete('/memory/{id}', 'MemoriesController@destroy');

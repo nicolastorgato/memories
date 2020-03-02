@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+@charset "UTF-8";
 
 /*! bulma.io v0.7.5 | MIT License | github.com/jgthms/bulma */
 
@@ -6983,7 +6984,7 @@ a.list-item {
   z-index: 30;
 }
 
-/* .navbar.is-white {
+.navbar.is-white {
   background-color: white;
   color: #0a0a0a;
 }
@@ -6999,9 +7000,9 @@ a.list-item {
 .navbar.is-white .navbar-brand .navbar-link:focus,
 .navbar.is-white .navbar-brand .navbar-link:hover,
 .navbar.is-white .navbar-brand .navbar-link.is-active {
-  background-color: #f2f2f2;
+  /* background-color: #f2f2f2; */
   color: #0a0a0a;
-} */
+}
 
 .navbar.is-white .navbar-brand .navbar-link::after {
   border-color: #0a0a0a;
@@ -7031,7 +7032,7 @@ a.list-item {
   .navbar.is-white .navbar-end .navbar-link:focus,
   .navbar.is-white .navbar-end .navbar-link:hover,
   .navbar.is-white .navbar-end .navbar-link.is-active {
-    background-color: #f2f2f2;
+    /* background-color: #f2f2f2; */
     color: #0a0a0a;
   }
 
@@ -7043,7 +7044,7 @@ a.list-item {
   .navbar.is-white .navbar-item.has-dropdown:focus .navbar-link,
   .navbar.is-white .navbar-item.has-dropdown:hover .navbar-link,
   .navbar.is-white .navbar-item.has-dropdown.is-active .navbar-link {
-    background-color: #f2f2f2;
+    /* background-color: #f2f2f2; */
     color: #0a0a0a;
   }
 
@@ -8196,7 +8197,7 @@ a.navbar-item.is-active,
     padding-bottom: 5.25rem;
   }
 
-  /* a.navbar-item.is-active,
+  a.navbar-item.is-active,
   .navbar-link.is-active {
     color: #0a0a0a;
   }
@@ -8209,8 +8210,8 @@ a.navbar-item.is-active,
   .navbar-item.has-dropdown:focus .navbar-link,
   .navbar-item.has-dropdown:hover .navbar-link,
   .navbar-item.has-dropdown.is-active .navbar-link {
-    background-color: #fafafa;
-  } */
+    /* background-color: #fafafa; */
+  }
 }
 
 .hero.is-fullheight-with-navbar {
@@ -11055,7 +11056,7 @@ label.panel-block:hover {
   }
 }
 
-/* .hero.is-white .navbar-item,
+.hero.is-white .navbar-item,
 .hero.is-white .navbar-link {
   color: rgba(10, 10, 10, 0.7);
 }
@@ -11066,7 +11067,7 @@ label.panel-block:hover {
 .hero.is-white .navbar-link.is-active {
   background-color: #f2f2f2;
   color: #0a0a0a;
-} */
+}
 
 .hero.is-white .tabs a {
   color: #0a0a0a;
@@ -13346,7 +13347,7 @@ label.panel-block:hover {
 .datetimepicker .timepicker .timepicker-start .timepicker-minutes .timepicker-input.is-input .timepicker-input-number,
 .datetimepicker .timepicker .timepicker-end .timepicker-hours .timepicker-input.is-input .timepicker-input-number,
 .datetimepicker .timepicker .timepicker-end .timepicker-minutes .timepicker-input.is-input .timepicker-input-number {
-  visability: hidden;
+  visibility: hidden;
   opacity: 0;
   transition: opacity 100ms ease-in;
 }
@@ -13355,7 +13356,7 @@ label.panel-block:hover {
 .datetimepicker .timepicker .timepicker-start .timepicker-minutes .timepicker-input.is-input input,
 .datetimepicker .timepicker .timepicker-end .timepicker-hours .timepicker-input.is-input input,
 .datetimepicker .timepicker .timepicker-end .timepicker-minutes .timepicker-input.is-input input {
-  visability: visible;
+  visibility: visible;
   opacity: 1;
   transition: opacity 100ms ease-in;
 }
@@ -13384,7 +13385,7 @@ label.panel-block:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  visability: visible;
+  visibility: visible;
   opacity: 1;
   transition: opacity 1000ms ease-in;
   font-weight: 300;

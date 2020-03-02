@@ -8,7 +8,7 @@
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>Laravel {{ app()->version() }}</title>
+        <title> {{ config('app.name', 'Laravel') }} </title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -16,46 +16,18 @@
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
+        <link rel="icon" href="{{ URL::asset('favicon.ico') }}" type="image/x-icon"/>
+
         <!-- Styles -->
         <style>
-            html, body {
+            /* html, body {
                 background-color: #fff;
                 color: #636b6f;
                 font-family: 'Raleway', sans-serif;
                 font-weight: 100;
                 height: 100vh;
                 margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .top-left {
-                position: absolute;
-                left: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
+            } */
 
             .title {
                 font-size: 84px;
@@ -71,24 +43,42 @@
                 text-transform: uppercase;
             }
 
-            .subtitle {
+             #nameDropDownMenu > p{
                 color: #636b6f;
                 padding: 0 25px;
                 font-size: 12px;
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
+                text-transform: uppercase;
             }
 
-            .framwork_title {
+            .subtitle {
+                color: #636b6f;
+                padding: 0 25px;
+                font-size: 25px;
                 font-weight: 600;
-                padding-top: 20px;
+                letter-spacing: .1rem;
+                text-decoration: none;
             }
 
-            .m-b-md {
-                margin-bottom: 30px;
-            }
         </style>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+          $(document).ready(function() {
+
+            // Check for click events on the navbar burger icon
+            $(".navbar-burger").click(function() {
+
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                $(".navbar-burger").toggleClass("is-active");
+                $(".navbar-menu").toggleClass("is-active");
+
+            });
+          });
+
+        </script>
     </head>
     <body>
 
@@ -96,20 +86,20 @@
     <section class="hero is-fullheight">
       <!-- Hero head: will stick at the top -->
       <div class="hero-head">
-        <nav class="navbar is-spaced">
+        <nav class="navbar is-white is-spaced">
                 <div class="container">
 
                     <div class="navbar-brand links">
                          <a href="{{ url('/') }}" class="navbar-item"> <p class="is-size-5 has-text-weight-bold">memories</p>  </a>
 
-                        <div class="navbar-burger burger" data-target="navMenu">
+                        <div class="navbar-burger burger" data-target="navMenuWelcome">
                             <span></span>
                             <span></span>
                             <span></span>
                         </div>
                     </div>
                     
-                    <div class="navbar-menu" id="navMenu">
+                    <div class="navbar-menu" id="navMenuWelcome">
                         <div class="navbar-start"></div>
 
                         <div class="navbar-end links">

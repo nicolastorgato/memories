@@ -14,7 +14,7 @@
                     <form class="login-form" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
 
-                        <div class="field is-horizontal">
+                        <div class="field is-horizontal center">
                             <div class="field-label">
                                 <label class="label">E-Mail Address</label>
                             </div>
@@ -35,7 +35,7 @@
                             </div>
                         </div>
 
-                        <div class="field is-horizontal">
+                        <div class="field is-horizontal center">
                             <div class="field-label">
                                 <label class="label">Password</label>
                             </div>
@@ -76,7 +76,7 @@
                             <div class="field-body">
                                 <div class="field is-grouped">
                                     <div class="control">
-                                        <button type="submit" class="button is-primary">Login</button>
+                                        <button type="submit" class="button is-info">Login</button>
                                     </div>
 
                                     <div class="control" style="display: flex; align-items: center;">

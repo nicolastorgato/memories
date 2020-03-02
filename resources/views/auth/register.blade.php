@@ -14,8 +14,8 @@
 
                         {{ csrf_field() }}
 
-                        <div class="field is-horizontal">
-                            <div class="field-label">
+                        <div class="field is-horizontal center">
+                            <div class="field-label has-text-right">
                                 <label class="label">Name</label>
                             </div>
 
@@ -35,7 +35,7 @@
                             </div>
                         </div>
 
-                        <div class="field is-horizontal">
+                        <div class="field is-horizontal center">
                             <div class="field-label">
                                 <label class="label">E-mail Address</label>
                             </div>
@@ -56,7 +56,7 @@
                             </div>
                         </div>
 
-                        <div class="field is-horizontal">
+                        <div class="field is-horizontal center">
                             <div class="field-label">
                                 <label class="label">Password</label>
                             </div>
@@ -76,7 +76,7 @@
                             </div>
                         </div>
 
-                        <div class="field is-horizontal">
+                        <div class="field is-horizontal center">
                             <div class="field-label">
                                 <label class="label">Confirm Password</label>
                             </div>
@@ -97,7 +97,7 @@
                             <div class="field-body">
                                 <div class="field is-grouped">
                                     <div class="control">
-                                        <button type="submit" class="button is-primary">Register</button>
+                                        <button type="submit" class="button is-info">Register</button>
                                     </div>
                                 </div>
                             </div>
