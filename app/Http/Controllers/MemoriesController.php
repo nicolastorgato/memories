@@ -19,7 +19,7 @@ class MemoriesController extends Controller
     public function index()
     {
         // $memories = Memory::orderBy('created_at', 'asc')->get();
-        $memories = Auth::user()->memories;
+        $memories = Auth::user()->memories->sortByDesc('created_at');
 
         return view('memories', [
             'memories' => $memories

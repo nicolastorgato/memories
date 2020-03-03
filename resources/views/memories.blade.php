@@ -26,7 +26,7 @@
                                 </div>
                                 <div class="field">       
                                     <div class="control">
-                                        <textarea class="textarea has-fixed-size" name="description" placeholder="Description" value="{{ old('description') }}"></textarea>
+                                        <textarea class="textarea has-fixed-size" name="description" placeholder="Description">{{old('description')}}</textarea>
                                     </div>
                                 </div>
                                 <div class="control center">
