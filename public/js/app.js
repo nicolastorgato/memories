@@ -25933,8 +25933,8 @@ bulmaTagsinput.attach();
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\LARAVEL\memories\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\LARAVEL\memories\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\vidrez\Documents\Progetti\code\memories\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\vidrez\Documents\Progetti\code\memories\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

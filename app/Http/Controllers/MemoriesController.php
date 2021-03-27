@@ -127,10 +127,15 @@ class MemoriesController extends Controller
      * @param  \App\Memory  $memory
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Memory $id)
     {
-        Memory::findOrFail($id)->delete();
+        if($id->user->id === Auth::id()) {
+          $id->delete();
+        } else {
+          abort(419, 'NO PORCO DIO');
+        }
 
-        return redirect('/memories');
+
+        return back();
     }
 }

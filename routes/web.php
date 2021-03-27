@@ -21,4 +21,4 @@ Route::get('/memories', 'MemoriesController@index')->middleware('auth');
 
 Route::post('/memories', 'MemoriesController@store');
 
-Route::delete('/memory/{id}', 'MemoriesController@destroy');
+Route::delete('/memory/{id}', 'MemoriesController@destroy')->middleware('auth');
